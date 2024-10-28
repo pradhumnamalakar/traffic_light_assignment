@@ -1,0 +1,20 @@
+.traffic-light {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+
+    &.red {
+        background-color: #f03f1c;
+    }
+
+    &.yellow {
+        background-color: #dede02;
+    }
+
+    &.green {
+        background-color: #17d417;
+    }
+}

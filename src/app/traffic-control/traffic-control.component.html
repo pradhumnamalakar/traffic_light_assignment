@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="form-group">
+        <label for="green duration">Green Signal Duration</label>
+        <input type="number" class="green-duration-input" placeholder="Enter green signal duration (in seconds)"
+            [(ngModel)]="greenDurationInput" (change)="updateGreenDuration()">
+    </div>
+    <div class="traffic-container">
+        <div class="traffic-box"></div>
+        <div class="traffic-box">
+            <!-- North direction traffic light -->
+            <trafic-light [color]="colors['north']" [direction]="'North'"></trafic-light>
+        </div>
+        <div class="traffic-box"></div>
+        <div class="traffic-box">
+            <!-- West direction traffic light -->
+            <trafic-light [color]="colors['west']" [direction]="'West'">
+            </trafic-light>
+        </div>
+        <div class="traffic-box"></div>
+        <div class="traffic-box">
+            <!-- East direction traffic light -->
+            <trafic-light [color]="colors['east']" [direction]="'East'">
+            </trafic-light>
+        </div>
+        <div class="traffic-box"></div>
+        <div class="traffic-box">
+            <!-- South direction traffic light -->
+            <trafic-light [color]="colors['south']" [direction]="'South'">
+            </trafic-light>
+        </div>
+        <div class="traffic-box"></div>
+    </div>
+</div>
